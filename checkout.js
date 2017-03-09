@@ -66,11 +66,14 @@ $().ready(function() {
     }
   });
     console.log(Object.keys(validator), Object.values(validator))
+    console.log(validator)
   $('#purchase').on('submit', function (e) {
     e.preventDefault();
     console.log('before the loop')
+
+
     if (validator.element("#shipping-first")) {
-      window.open(ordersummary.html)
+      window.open('ordersummary.html')
    }
   });
 
